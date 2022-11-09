@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+            
+    }
+    body{
+        height: 500px;
+        width: 100%;
+        background-image: url("https://www.whatsappimages.in/wp-content/uploads/2022/07/good-background-images-of-nature.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .menu-bar{
+        background-color: lightsalmon;
+        text-align: center;
+    }
+    .menu-bar ul{
+        display: inline-flex;
+        list-style: none;
+       
+
+    }
+    .menu-bar ul li{
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 15px;
+        
+    }
+    .menu-bar ul li a{
+        text-decoration: none;
+        color: white;
+    }
+   
+    .active, .menu-bar ul li:hover{
+        color: aqua;
+        background-color: lightgreen;
+        border-radius: 4px;
+    }
+    .menu-bar, .fa{
+        margin-right: 18px;
+    }
+    .sub-menu{
+        display: none;
+    }
+    .menu-bar ul li:hover .sub-menu{
+        display: block;
+        
+    }
+</style>
+<body>
+    <header>
+        <div class="menu-bar">
+        <ul>
+            <li class="active"><i class="fa-solid fa-house-user"></i><a href="#">home</a></li>
+            <li><a href="#">about</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="#">mission</a></li>
+                        <li><a href="#">vision</a></li>
+                        <li><a href="#">team</a></li>
+                        <li><a href="#">signup</a></li>
+                    </ul>
+                                </div></li>
+            <li><i class="fa-solid fa-taxi"></i><a href="#">services</a></li>
+            <li><a href="#">clients</a></li>
+            <li><a href="#">investors</a></li>
+            <li><a href="#">pricing</a></li>
+            <li><a href="#">training</a></li>
+            <li><i class="fa-solid fa-user"></i><a href="#">contact</a></li>
+        </ul>
+    </div>
+    </header>
+</body>
+</html>
